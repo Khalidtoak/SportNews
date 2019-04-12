@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ui.HomeFrag">
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latest News"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center|top"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/home_recycler"
+            android:layout_margin="20dp"
+            tools:listitem="@layout/sport_news_item"/>
+    <ProgressBar
+            android:id="@+id/content_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    <ImageButton android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/refresh_button"
+                 android:layout_gravity="center"
+                 android:clickable="true"
+                 android:background="@drawable/ic_refresh_black_24dp"/>
+
+
+
+
+
+</FrameLayout>

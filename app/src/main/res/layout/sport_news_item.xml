@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardElevation="10dp"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        android:id="@+id/news_card"
+        android:layout_gravity="top"
+        app:contentPadding="5dp" app:cardCornerRadius="5dp">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_gravity="center|top"
+
+    >
+        <ImageView android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:id="@+id/news_image"
+                   android:scaleType="centerCrop"
+                   android:layout_margin="10dp"
+                   android:layout_gravity="end"
+                   android:src="@drawable/ic_photo_size_select_actual_black_24dp"
+
+        />
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+        >
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/news_title"
+                      android:textSize="25sp"
+                      android:textStyle="bold"
+                      android:text="Sport News Title"
+                      android:layout_margin="14dp"
+            />
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:gravity="center"
+            >
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/news_source"
+                          android:textSize="15sp"
+                          android:text="BBC News"
+                          android:layout_margin="5dp"
+                />
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/news_date"
+                          android:textSize="15sp"
+                          android:text="21-12-1980"
+                          android:layout_margin="5dp"
+                />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/colorAccent"
+          android:layout_gravity="bottom"
+    >
+
+    </View>
+</androidx.cardview.widget.CardView>
+
+

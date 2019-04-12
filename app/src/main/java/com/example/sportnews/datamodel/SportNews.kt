@@ -1,0 +1,24 @@
+package com.example.sportnews.datamodel
+
+data class SportNews(
+    val articles: List<Article>,
+    val source: List<Source>,
+    val status: String,
+    val totalResults: Int
+)
+
+data class Article(
+    val author: String,
+    val content: String,
+    val description: String,
+    val publishedAt: String,
+    val source: Source,
+    val title: String,
+    val url: String,
+    val urlToImage: String
+)
+
+data class Source(
+    val id: Any,
+    val name: String
+)
